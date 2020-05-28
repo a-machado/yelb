@@ -4,7 +4,7 @@ metadata:
   name: yelb-ui-ingress
 spec:
   rules:
-    - host: yelb.mydomain.com
+    - host: yelb.10.16.202.119.xip.io
       http:
         paths:
           - path: /
