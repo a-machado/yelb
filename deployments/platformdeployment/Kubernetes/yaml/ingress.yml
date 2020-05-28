@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: yelb-ui-ingress
+spec:
+  rules:
+    - host: yelb.mydomain.com
+      http:
+        paths:
+          - path: /
+            backend: 
+              serviceName: yelb-ui
+              servicePort: 80
